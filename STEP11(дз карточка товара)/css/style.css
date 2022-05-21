@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before{
+padding: 0;
+margin: 0;
+border:0;
+box-sizing: border-box;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+font-family: "Roboto Condensed", sans-serif;
+font-size: 16px; 
+line-height: 22px;
+color:#555;
+}
+
+.page{
+min-height: 100vh;
+position: relative;
+}
+
+.wrapper{
+max-width: 920px;
+margin: 0 auto;
+}
+
+.page1 .card{
+width: 100%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%); 
+/* точно в центре */  
+}
+
+.page1 .card .foto,
+.page1 .card .text{
+width: 50%;
+display: inline-block; 
+vertical-align: top;
+padding: 25px;
+}
+
+.page1 .card .foto img{
+width: 100%;
+object-fit: cover;
+}
+
+.page1 .card .foto img:hover{
+transform: scale(1.1);
+transition: 0.5s;
+}
+
+.page1 .card .text a{
+display: block; 
+text-align: center;
+background-color:crimson;
+border-radius: 50px 50px 50px 50px;
+margin: 70px;
+padding: 5px 20px;
+color: grey;
+font-size: 20px;
+text-decoration: none;
+}
+
+/* ----------table-------- */
+
+.page2 .card .foto,
+.page2 .card .text{
+width: 50%;
+padding: 25px;
+}
+
+.fotoSmallscrean{
+display:none;
+}
+.page2 .card .foto img{
+width: 100%;
+object-fit: cover;
+transition: 0.5s;
+}
+
+.page2 .card .foto img:hover,
+.page2 .card .fotoSmallscrean img:hover
+{
+transform: scale(1.1);
+}
+
+.page2 .card .text a{
+display: block; 
+text-align: center;
+background-color:crimson;
+border-radius: 50px 50px 50px 50px;
+margin: 70px;
+padding: 5px 20px;
+color: grey;
+font-size: 20px;
+text-decoration: none;
+}
+
+/* --------------float------- */
+.page3 .card{
+width: 100%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+
+.page3 .card .foto,
+.page3 .card .text{
+padding : 25px; 
+display: block;
+} 
+
+.page3 .card .foto{
+float: left;
+width: 50%;
+}
+
+.page3 .card .foto img{
+width: 100%;
+object-fit: cover;
+transition: 0.5s;
+}
+
+.page3 .card .foto img:hover{
+transform: scale(1.1);
+}
+
+.page3 .card .text a{
+position: fixed; 
+left: 60%;
+top: 40%;
+color: grey;
+font-size: 20px; 
+text-decoration: none;
+display: block;    
+text-align: center; 
+background-color:crimson;
+border-radius: 50px 50px 50px 50px;
+margin: 70px;   
+padding: 5px 20px;
+}
+
+.clearfix::after{
+content: "";
+display: block;
+clear: both;
+}
+
+/* ------------------адаптив----------- */
+
+@media (max-width:550px) { 
+    body{
+    font-size: 16px;
+    line-height: 22px;
+    } 
+    .page1 .card .foto,
+    .page1 .card .text{
+    width: 100%;
+    }
+    
+    .page2 .card .foto{
+    display: none;
+    }
+    .page2 .card .fotoSmallscrean{
+    display: block;
+    }
+    .page2 .card .text{
+    width: 100%;
+    }
+    .page3 .card .foto{
+    width: 100%;
+    float: none;
+    }
+    
+    } 

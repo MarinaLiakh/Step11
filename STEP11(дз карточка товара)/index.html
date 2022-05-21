@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка товара разными методами</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+      <div id="page1" class="page1 page">
+          page1 inline <a href="#page2">Next Page</a>
+                      <div class="card">
+                 <div class="foto">
+                    <img src="/img/clock.jpg" alt="">
+                 </div><div class="text">
+                     <h2>Настенные часы</h2><br>
+                      <p>Часы настенные лаконично впишутся в интерьер вашей квартиры и сделают атмосферу уютней. Часы работают от батарейки, не создают шум, и долго прослужат в качестве полезного элемента декора вашей квартиры. </p><br>
+                      <p class="price"><strong>100.10Br</strong></p>
+                      <a href="#" class="btn">Купить</a>
+                    </div>
+                  </div>
+        
+           
+      </div> 
+      <div id="page2" class="page2 page">page2 Table<a href="#page3">Next Page</a>
+        <table class="card">
+        <tr>
+            <td class="fotoSmallscrean"> 
+            <img src="/img/clock.jpg" alt="">
+            </td> 
+        </tr> 
+            <tr>
+              <td class="foto">
+               <img src="/img/clock.jpg" alt="">
+              </td>
+                <td class="text">
+                      <h2>Настенные часы</h2><br>
+                      <p>Часы настенные лаконично впишутся в интерьер вашей квартиры и сделают атмосферу уютней. Часы работают от батарейки, не создают шум, и долго прослужат в качестве полезного элемента декора вашей квартиры.</p><br>
+                      <p class="price"><strong>100.10Br</strong></p>
+                      <a href="#" class="btn">Купить</a>
+               </td>
+            </tr>
+        </table>
+      </div> 
+      <div id="page3" class="page3 page">
+          page3 float <a href="#page4">Next Page</a>
+           <div class="card clearfix" >
+                    <div class="foto clearfix">
+                        <img src="/img/clock.jpg" alt="">
+                       </div><div class="text">
+                       <h2>Настенные часы</h2><br>
+                        <p>Часы настенные лаконично впишутся в интерьер вашей квартиры и сделают атмосферу уютней. Часы работают от батарейки, не создают шум, и долго прослужат в качестве полезного элемента декора вашей квартиры.</p><br>
+                        <p class="price"><strong>100.10Br</strong></p>
+                        <a href="#" class="btn">Купить</a>
+                    </div>
+          </div>
+      </div>
+      <div id="page4" class="page4 page">page4 <a href="#">Next Page</a>
+      </div>
+</body>
+</html>
